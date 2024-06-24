@@ -1,0 +1,10 @@
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Jose', 'Perez', 'jp@email.com', 5487519, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Male', 'Diaz', 'md@email.com', 4875904, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Victor', 'Gonzales', 'vg@email.com', 7802146, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Sebas', 'Villa', 'sv@email.com', 3233487, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Rosa', 'Gomes', 'rg@email.com', 7005978, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Salo', 'Munoz', 'sm@email.com', 7226983, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Oscar', 'Garcia', 'og@email.com', 1123975, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Vivi', 'Suarez', 'vs@email.com', 1442698, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Melisa', 'Matiz', 'mm@email.com', 4458934, '2024-06-20');
+INSERT INTO cliente(nombre, apellido, email, telefono, fecha_creacion) VALUES ('Maru', 'Valdez', 'mv@email.com', 3364789, '2024-06-20');
