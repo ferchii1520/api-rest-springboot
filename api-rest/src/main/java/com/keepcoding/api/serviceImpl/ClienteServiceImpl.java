@@ -34,5 +34,17 @@ public class ClienteServiceImpl implements ClienteService {
 		return clienteRepository.findById(id).orElse(null);
 	}
 	
+	@Override
+	@Transactional(readOnly = true)
+	public List<Cliente> buscarPorNombreApellido(String nombre, String apellido) {
+		return clienteRepository.findByNombreAndApellido(nombre, apellido);
+	}
+	
+	@Override
+	@Transactional(readOnly = true)
+	public List<Cliente> buscarPorEmailTelefono(String email, Integer telefono){
+		return clienteRepository.findByEmailAndTelefono(email, telefono);
+	}
+
 
 }

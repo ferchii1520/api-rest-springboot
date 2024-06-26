@@ -1,5 +1,7 @@
 package com.keepcoding.api.controller;
 
+
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.keepcoding.api.entity.Cliente;
 import com.keepcoding.api.service.ClienteService;
+
 
 @RestController
 @RequestMapping("/api")
@@ -34,5 +37,16 @@ public class ClienteRestController {
 	public Cliente create(@RequestBody Cliente clientes) {
 		return clienteService.guardar(clientes);
 	}
+	
+	@GetMapping("/clientes/buscarNombreApellido/{nombre}/{apellido}")
+	public List<Cliente> show(@PathVariable String nombre, @PathVariable String apellido) {
+		return clienteService.buscarPorNombreApellido(nombre, apellido);
+	}
+	
+	@GetMapping("/clientes/buscarEmailTelefono/{email}/{telefono}")
+	public List<Cliente> show(@PathVariable String email, @PathVariable Integer telefono) {
+		return clienteService.buscarPorEmailTelefono(email, telefono);
+	}
+	
 
 }
